@@ -22,6 +22,10 @@
     padding: 30px 0 30px 30px;
 }
 
+.header-menu{
+    display: none;
+}
+
 .navigation-bar{
     display: flex;
     flex-direction: row;
@@ -115,7 +119,7 @@
     width: 16px;
 }
 
-.hero--money{
+.hero--type-time{
     font-size: 20px;
 }
 
@@ -125,15 +129,17 @@
     font-weight: 700;
 }
 
-.hero--period{
-    font-size: 20px;
-}
-
 .hero--coste-free{
     font-size: 20px;
     font-weight: 700;
     line-height: 32px;
     margin: 0 0 24px;
+}
+
+.hero--button{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
 }
 
 .hero--button-start{
@@ -170,7 +176,7 @@
     margin-right: 4px;
 }
 
-.hero-image{
+.hero--hero-image{
     display: flex;
     flex: 2;
     justify-content: center;
@@ -178,7 +184,7 @@
     max-width: 880px;
 }
 
-.hero-image img{
+.hero--hero-image img{
     max-width: 100%;
 }
 
@@ -287,10 +293,6 @@
     background-color: #f4f5ff;
 }
 
-/* .background-footer{
-    background-color: #f4f5ff;
-} */
-
 .footer-social{
     display: flex;
     flex-direction: row;
@@ -359,4 +361,205 @@
 .background-color--space{
     background-color: #f4f5ff;
     margin-top: 16px;
+}
+
+.kodee{
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    gap: 8px;
+    padding: 8px 16px 8px 8px;
+    background-color: #673de6;
+    color: #e2dbfc;
+    border: none;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+    line-height: 24px;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-color{
+    background-color: #673de6;
+}
+
+/* Condiciones responsive */
+@media screen and (max-width: 1060px){
+    
+    .header-page{
+        justify-content: space-between;
+    }
+    
+    .logo{
+        height: 62px;
+        width: 147px;
+        padding: 16px 0 16px 20px;
+    }
+
+    .header-menu{
+        display: flex;
+        position: absolute;
+        right: 16px;
+        top: 16px;
+        width: 24px;
+    }
+    
+    .navigation-bar{
+        display: none;
+    }
+    
+    .nav-list{
+        display: none;
+    }
+
+    .hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 768px;
+    margin: auto;
+    padding: 124px 40px 96px;
+    gap: 8px;
+    }
+
+    .hero--hero-image{
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .migration-header{
+        flex-direction: column;
+        align-items: center;
+        width: 688px;
+    }
+
+    .migration-header--h2{
+        font-size: 28px;
+    }
+
+    .migration-card-container{
+        flex-direction: column;
+        align-items: center;
+        width: 688px;
+    }
+
+    .migration-card-details{
+        width: 688px;
+    }
+
+    .footer-payment-policies{
+        flex-direction: column-reverse;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
+    .footer-copyright{
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 768px){
+    main{
+        width: 100%;
+    }
+
+    .navigation-bar{
+        display: none;
+    }
+
+    .hero{
+        width: 100%;
+        padding: 76px 16px 36px;
+    }
+
+    .hero--title{
+        margin: 0 0 16px;
+    }
+
+    .hero--title-h1{
+        font-size: 24px;
+    }
+
+    .hero--sub-title{
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .hero--coste{
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .hero--coste-free{
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0 0 16px;
+    }
+
+    .hero--button{
+        flex-direction: column-reverse;
+    }
+
+    .hero--button-time{
+        padding: 12px 48px;
+        width: 100%;
+    }
+
+    .migration-section{
+        padding: 56px 0px;
+    }
+
+    .migration-header{
+        padding: 0 16px;
+        width: 100%;
+    }
+
+    .migration-header--h2{
+        font-size: 24px;
+    }
+
+    .migration-card-container{
+        padding: 0 16px;
+        width: 100%;
+    }
+
+    .migration-card-details{
+        width: 100%;
+    }
+
+    footer{
+        padding: 16px 16px 0;
+    }
+
+    .footer-hostinger{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .footer-social{
+        width: 100%;
+        justify-content: space-between;
+        padding: 16px 0;
+        margin-bottom: 8px;
+    }
+
+    .footer-payment{
+        flex-direction: column;
+    }
+
+    .footer-policies{
+        margin-bottom: 8px;
+    }
+    
+    .footer-copyright{
+        flex-direction: column;
+        gap: 16px;
+        align-items: flex-start;
+    }
 }
